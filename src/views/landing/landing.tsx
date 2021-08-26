@@ -19,7 +19,7 @@ const LandingView = () => {
 					Stimuli
 				</Header>
 				<SSWrapper
-					href='https://subliminal-stimuli-eight.vercel.app'
+					href='https://subliminal-stimuli.vercel.app'
 					rel='noreferrer'
 					target='_blank'
 				>
