@@ -31,10 +31,7 @@ const RightContent = () => {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <img
-                                src="http://g-ecx.images-amazon.com/images/G/01/lwa/btnLWA_gold_312x64_pressed.png"
-                                alt="amazon-button"
-                            />
+                            <img src="/amazon-login.png" alt="amazon-button" />
                         </a>
                     </p>
                     <p>
