@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(/webfont/Futura-CondensedExtraBold.39edksdfw33.woff) format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(/webfont/Futura-Medium.39edksdfw33.woff) format('woff');
+    font-weight: 400;
+}
+
+.wrapper {
+    font-family: Futura, Roboto;
+    font-weight: 400;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    // background-color: #000;
+    color: #fff;
+}
+
+.grow {
+    flex: 1;
+}
+
+.padding {
+    margin-inline: auto;
+    max-width: 1440px;
+    padding-inline: 0.5rem;
+}
+
+.header {
+    top: 0px;
+    z-index: 1300;
+    position: fixed;
+    background-color: #000;
+    right: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    position: relative;
+}
+
+.nav-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-left {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn {
+    background: transparent;
+    padding: 0.5rem;
+    border: none;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}
+
+.twobytwo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1rem;
+}
+
+.twobytwo-item {
+    aspect-ratio: 1 / 1;
+    background-color: red;
+    width: 100%;
+}
+
+.widget {
+    box-sizing: border-box;
+    // margin-block: 3rem;
+    // background-color: #272932;
+    // background-image: linear-gradient(180deg, transparent, #272932 65%),
+    //     url(https://www.rtfkt.com/img/Grid2x.01e4d800.png);
+    padding-block-start: calc(64px + 1rem);
+    height: 100vh;
+}
+
+.long-left {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content {
+    display: grid;
+    grid-gap: 1rem;
+    margin-block: 1rem;
+    width: min(100%, 400px);
+}
+@mixin highlight-container {
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    border-radius: 10rem;
+    letter-spacing: 0.1rem;
+}
+
+.highlight-container-yellow {
+    @include highlight-container();
+    background: linear-gradient(90deg, #665835, #27293200);
+
+    .highlight-badge {
+        background-color: #d4b25b;
+    }
+}
+.highlight-container-grey {
+    @include highlight-container();
+    background: linear-gradient(90deg, #46465d, #27293200);
+    .highlight-badge {
+        background-color: #a3a2aa;
+    }
+}
+.highlight-container-bronze {
+    @include highlight-container();
+    background: linear-gradient(90deg, #392a1d, #28283400);
+    .highlight-badge {
+        background-color: #a27c59;
+    }
+}
+
+.highlight-badge {
+    border-radius: 10rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.traits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
