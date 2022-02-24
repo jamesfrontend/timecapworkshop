@@ -16,7 +16,10 @@ const NFTPage = () => {
                                 </button>
                             </div>
                             <div className={c['nav-center']}>
-                                <span className="header-logo">SEAUX</span>
+                                {/* <span className="header-logo">SEAUX</span> */}
+                                <span className="header-logo">
+                                    <span>A</span>
+                                </span>
                             </div>
                         </nav>
                     </section>
@@ -29,7 +32,10 @@ const NFTPage = () => {
                         <figure />
                         <figure />
                         <div className="splash-text">
-                            <h2>South East Asian User Experience</h2>
+                            <h1>
+                                <span>A</span>sian <span>A</span>merican User
+                                Experience
+                            </h1>
                         </div>
                     </div>
                     <section className="project-widget">

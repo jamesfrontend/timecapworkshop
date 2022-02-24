@@ -10,6 +10,19 @@
     font-family: 'Shizuru', cursive;
     font-size: 2rem;
     line-height: 1;
+    span {
+        position: relative;
+        padding-inline: 4px 4px;
+        font-size: 2.5rem;
+
+        &::after {
+            content: '2';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            font-size: 1.25rem;
+        }
+    }
 }
 
 .splash-text {
@@ -22,6 +35,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0px 3px 5px black;
+
+    h1 span {
+        font-family: 'Shizuru', cursive;
+    }
 }
 
 // Crossfading
